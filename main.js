@@ -52,8 +52,6 @@ function drawList() {
     button.appendTo($('<td class="text-center align-middle"></td>')).appendTo(row);
 
     row.appendTo($("table tbody"));
-    
-    $('.fade-tr').css('opacity',"1")
   });
 }
 
