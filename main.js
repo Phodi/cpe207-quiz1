@@ -45,7 +45,7 @@ function drawList() {
 
     let button = $('<button class="btn btn-danger my-1"> &#10008 </button>');
     button.click(() => {
-      deltedFromList(data.id);
+      deletedFromList(data.id);
       drawList();
       notice("delete",'<b>'+ data.name + "</b> Deleted");
     });
@@ -98,7 +98,7 @@ function appendToList(data) {
   lS.setObj("bm", arr);
 }
 
-function deltedFromList(id) {
+function deletedFromList(id) {
   if (lS.getObj("bm") == null) return;
   let arr = lS.getObj("bm");
   let tarIndex = -1;
